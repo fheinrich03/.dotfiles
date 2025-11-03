@@ -20,6 +20,7 @@ ln -s ~/.dotfiles/karabiner ~/.config/karabiner
 ln -s ~/.dotfiles/nvim ~/.config/nvim
 ln -s ~/.dotfiles/raycast ~/.config/raycast
 ln -s ~/.dotfiles/tmux ~/.config/tmux
+ln -s ~/.dotfiles/yazi ~/.config/yazi
 ```
 
 3. Some configs require some additional installation
