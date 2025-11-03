@@ -16,6 +16,7 @@ return {
         enabled = false,
       },
     },
+    last_session_on_startup = false,
   },
   init = function()
     vim.opt.sessionoptions:append("globals")
