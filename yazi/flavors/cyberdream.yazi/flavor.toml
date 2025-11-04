@@ -1,0 +1,177 @@
+# Cyberdream flavor for Yazi (schema-konform)
+
+# ---------------------
+# File list / Manager
+# ---------------------
+[mgr]
+cwd = { fg = "#5ef1ff" }
+
+hovered         = { fg = "#ffffff", bg = "#7b8496", bold = true }
+preview_hovered = { fg = "#ffffff", bg = "#3c4048", bold = true }
+
+find_keyword  = { fg = "#5eff6c", bold = true }
+find_position = { fg = "#ffffff" }
+
+marker_copied   = { fg = "#f1ff5e", bg = "#f1ff5e" }
+marker_cut      = { fg = "#ff6e5e", bg = "#ff6e5e" }
+marker_marked   = { fg = "#5eff6c", bg = "#3c4048" }
+marker_selected = { fg = "#5eff6c", bg = "#3c4048" }
+
+count_copied   = { fg = "#16181a", bg = "#f1ff5e" }
+count_cut      = { fg = "#16181a", bg = "#ff6e5e" }
+count_selected = { fg = "#16181a", bg = "#5eff6c" }
+
+border_symbol = "│"
+border_style  = { fg = "#3c4048" }
+
+# ---------------------
+# Tabs
+# ---------------------
+[tabs]
+active   = { fg = "#16181a", bg = "#5ea1ff", bold = true }
+inactive = { fg = "#ffffff", bg = "#3c4048" }
+
+# ---------------------
+# Modes
+# ---------------------
+[mode]
+normal_main = { fg = "#16181a", bg = "#5ea1ff", bold = true }
+normal_alt  = { fg = "#5ea1ff", bg = "#3c4048" }
+
+select_main = { fg = "#16181a", bg = "#5eff6c", bold = true }
+select_alt  = { fg = "#5eff6c", bg = "#3c4048" }
+
+unset_main  = { fg = "#16181a", bg = "#ff5ef1", bold = true }
+unset_alt   = { fg = "#ff5ef1", bg = "#3c4048" }
+
+# ---------------------
+# Status bar
+# ---------------------
+[status]
+overall = { fg = "#ffffff", bg = "#16181a" }
+
+perm_type = { fg = "#5ea1ff" }
+perm_read = { fg = "#f1ff5e" }
+perm_write = { fg = "#ff6e5e" }
+perm_exec = { fg = "#5eff6c" }
+perm_sep  = { fg = "#3c4048" }
+
+progress_label  = { fg = "#ffffff", bg = "#16181a", bold = true }
+progress_normal = { fg = "#ffffff", bg = "#16181a" }
+progress_error  = { fg = "#ff6e5e", bg = "#16181a" }
+
+# ---------------------
+# Which-key
+# ---------------------
+[which]
+mask            = { bg = "#3c4048" }
+cand            = { fg = "#5ef1ff" }
+rest            = { fg = "#ff5ef1" }
+desc            = { fg = "#ffffff" }
+separator       = " -> "
+separator_style = { fg = "#7b8496" }
+
+# ---------------------
+# Confirm dialogs
+# ---------------------
+[confirm]
+border   = { fg = "#5ea1ff" }
+title    = { fg = "#5ea1ff" }
+content  = { fg = "#ffffff" }
+list     = { fg = "#ffffff" }
+btn_yes  = { fg = "#16181a", bg = "#5eff6c", bold = true }
+btn_no   = { fg = "#16181a", bg = "#ff6e5e", bold = true }
+btn_labels = ["Yes", "No"]
+
+# ---------------------
+# Spotter
+# ---------------------
+[spot]
+border   = { fg = "#5ea1ff" }
+title    = { fg = "#5ea1ff" }
+tbl_col  = { fg = "#5ef1ff" }
+tbl_cell = { fg = "#ffffff", bg = "#3c4048" }
+
+# ---------------------
+# Notifications
+# ---------------------
+[notify]
+title_info  = { fg = "#5eff6c" }
+title_warn  = { fg = "#f1ff5e" }
+title_error = { fg = "#ff6e5e" }
+
+# ---------------------
+# Picker (ehem. select)
+# ---------------------
+[pick]
+border   = { fg = "#5ea1ff" }
+active   = { fg = "#bd5eff", bold = true }
+inactive = { fg = "#ffffff" }
+
+# ---------------------
+# Input
+# ---------------------
+[input]
+border   = { fg = "#5ea1ff" }
+title    = { fg = "#ffffff" }
+value    = { fg = "#ffffff" }
+selected = { bg = "#7b8496" }
+
+# ---------------------
+# Completion
+# ---------------------
+[cmp]
+border   = { fg = "#5ea1ff" }
+active   = { fg = "#bd5eff", bg = "#7b8496" }
+inactive = { fg = "#ffffff" }
+
+# ---------------------
+# Tasks
+# ---------------------
+[tasks]
+border  = { fg = "#5ea1ff" }
+title   = { fg = "#ffffff" }
+hovered = { fg = "#ffffff", bg = "#7b8496" }
+
+# ---------------------
+# Help
+# ---------------------
+[help]
+on      = { fg = "#bd5eff" }
+run     = { fg = "#5ef1ff" }
+desc    = { fg = "#ffffff" }
+hovered = { fg = "#ffffff", bg = "#7b8496", bold = true }
+footer  = { fg = "#ffffff" }
+
+# ---------------------
+# Filetype rules
+# ---------------------
+[filetype]
+rules = [
+  # Images
+  { mime = "image/*", fg = "#5ef1ff" },
+
+  # Media
+  { mime = "video/*", fg = "#f1ff5e" },
+  { mime = "audio/*", fg = "#f1ff5e" },
+
+  # Archives
+  { mime = "application/zip", fg = "#bd5eff" },
+  { mime = "application/gzip", fg = "#bd5eff" },
+  { mime = "application/x-tar", fg = "#bd5eff" },
+  { mime = "application/x-bzip", fg = "#bd5eff" },
+  { mime = "application/x-bzip2", fg = "#bd5eff" },
+  { mime = "application/x-7z-compressed", fg = "#bd5eff" },
+  { mime = "application/x-rar", fg = "#bd5eff" },
+  { mime = "application/xz", fg = "#bd5eff" },
+
+  # Documents
+  { mime = "application/pdf", fg = "#5eff6c" },
+  { mime = "application/doc", fg = "#5eff6c" },
+  { mime = "application/rtf", fg = "#5eff6c" },
+  { mime = "application/vnd.*", fg = "#5eff6c" },
+
+  # Directory + Fallback
+  { name = "*/", fg = "#5ea1ff", bold = true },
+  { name = "*",  fg = "#ffffff" }
+]
