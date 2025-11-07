@@ -4,7 +4,7 @@ return {
     projects = {
       "~/repos/*/*",
       "~/.dotfiles",
-      "~/Library/CloudStorage/GoogleDrive-*/My Drive/Obsidian_Vault",
+      "~/Google Drive/My Drive/Obsidian_Vault/",
 
       -- work PC (windows)
       "D:/app_config/*",
