@@ -11,20 +11,17 @@ git clone <repo> ~/.dotfiles
 - e.g. if you want to use this ghostty and tmux config
 - then remove or backup your `~/.config/ghostty` and `~/.config/tmux` config
 
-2. add symlinks from `.config/` to `.dotfiles/`
-> you only need symlinks for the modules that you want to use
+3. add symlinks from `.config/` to `.dotfiles/`
+> for this we will use `stow` following [this example](https://github.com/aspiers/stow)
+
+all you need to do is install stow and link the `.dotfiles/` folder to the parent folder
 ```bash
-ln -s ~/.dotfiles/fish ~/.config/fish
-ln -s ~/.dotfiles/ghostty ~/.config/ghostty
-ln -s ~/.dotfiles/karabiner ~/.config/karabiner
-ln -s ~/.dotfiles/nvim ~/.config/nvim
-ln -s ~/.dotfiles/raycast ~/.config/raycast
-ln -s ~/.dotfiles/tmux ~/.config/tmux
-ln -s ~/.dotfiles/yazi ~/.config/yazi
+cd ~/.dotfiles # make sure you are in dotfiles folder (which you cloned before)
+stow .
 ```
 
-3. Some configs require some additional installation
-- ...
+4. Some configs may require additional setup or installation of tools
+- for that check each `README.md`
 
 ## Font
 - The Font that I use in my configs is `Jetbrains Mono Nerd Font` from [Nerd Fonts](https://www.nerdfonts.com/)
