@@ -1,6 +1,16 @@
 # My Dotfiles
 
-## Installation
+## Prerequisites
+
+- Basic utils: `git`, `make`, `unzip`, C Compiler (`gcc`)
+- CLI utils: `fzf`
+- Language Setup: `npm`, `go`
+- [ripgrep](https://github.com/BurntSushi/ripgrep#installation),
+- [fd-find](https://github.com/sharkdp/fd#installation)
+
+## Installation and Setup
+
+### Cloning the Repo
 
 1. clone the repo
 ```bash
@@ -11,6 +21,8 @@ git clone <repo> ~/.dotfiles
 - e.g. if you want to use this ghostty and tmux config
 - then remove or backup your `~/.config/ghostty` and `~/.config/tmux` config
 
+### Adding Symlinks
+
 3. add symlinks from `.config/` to `.dotfiles/`
 > for this we will use `stow` following [this example](https://github.com/aspiers/stow)
 
@@ -20,15 +32,37 @@ cd ~/.dotfiles # make sure you are in dotfiles folder (which you cloned before)
 stow .
 ```
 
+### Module Specific Setups
+
 4. Some configs may require additional setup or installation of tools
 - for that check each `README.md`
 
-## Font
-- The Font that I use in my configs is `Jetbrains Mono Nerd Font` from [Nerd Fonts](https://www.nerdfonts.com/)
-- I recommend installing a nerd font of choice and enable it in `ghostty/config`
-> Nerd Fonts also come with Web Dev Icons which are required for some of the other modules
 
-## Theme
-- The Theme that I use is [cyberdream](https://github.com/scottmckendry/cyberdream.nvim?tab=readme-ov-file)
-- it is a neovim plugin but it can also be used for terminal emulator, shell, tmux etc.
-- see instructions in cyberdream README or in the appropriate dotfile module Readme
+## List of Tools and Plugins
+
+### Font
+- Some of the configs require a nerdfont to be installed
+- I recommend installing a nerd font of choice and enable it in `ghostty/config`
+- The Font that I use in my configs is `Jetbrains Mono Nerd Font`
+
+### Theme
+- The Theme that I use on all modules is [cyberdream](https://github.com/scottmckendry/cyberdream.nvim?tab=readme-ov-file)
+- It is a neovim plugin but it can also be used for terminal emulator, shell, tmux etc.
+- See instructions in cyberdream README or in the appropriate dotfile module Readme
+
+### Terminal Applications Tools
+
+- **neovim**: Powerful Editor for the terminal
+- **lazygit**: Git UI with vim like keybinds for fast Git actions for the terminal
+- **yazi**: Basically Finder on crack for the Terminal
+- **zoxide**: Better `cd` command with guessing based on your cd history
+- **stow**: Symlink Farm Manager - setup dotfiles once and never worry about it again
+
+
+### CLI Tools
+
+- **fzf**: Fuzzy Finder
+- **rg**: Ripgrep - Efficient Text search
+
+### Mentions
+- The nvim configuration is based on [kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim)

@@ -6,13 +6,18 @@
 	Cyberdream Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
 </h3>
 
-## 👀 Preview
+## Preview
 
 - [github: cyberdream.nvim](https://github.com/scottmckendry/cyberdream.nvim)
 
-## 🎨 Installation
+## Setup
 
-- Add this Flavor as a folder under ~/.config/yazi/flavors/cyberdream.yazi
+Setup plugins used in yazi
+```bash
+brew install trash-cli
+brew install coreutils
+# maybe you need to add trash-list to your PATH
+```
 
 ## ⚙️ Usage
 

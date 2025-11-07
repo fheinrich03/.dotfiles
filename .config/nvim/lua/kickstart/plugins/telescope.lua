@@ -48,6 +48,19 @@ return {
 
       require("telescope").setup({
         defaults = {
+          vimgrep_arguments = {
+            "rg",
+            "--color=never",
+            "--no-heading",
+            "--with-filename",
+            "--line-number",
+            "--column",
+            "--smart-case",
+            "--hidden", -- <— versteckte Dateien durchsuchen
+            "--glob=!**/.git/*", -- <— .git Ordner ausschließen
+            "--follow",
+            -- '--no-ignore',          -- <— optional: .gitignore NICHT respektieren
+          },
           mappings = {
             i = {
               [paste_key] = function()
