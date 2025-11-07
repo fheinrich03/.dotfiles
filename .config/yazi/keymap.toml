@@ -1,20 +1,15 @@
-# Dropping to the shell
-[[mgr.prepend_keymap]]
-on   = "!"
-for  = "unix"
-run  = 'shell "$SHELL" --block'
-desc = "Open $SHELL here"
+[mgr]
+prepend_keymap = [
+  { on = "!", for = "unix", run = 'shell "$SHELL" --block', desc = "Open $SHELL here" },
+  { on = "!", for = "windows", run = 'shell "powershell.exe" --block', desc = "Open PowerShell here" },
+  { on = "d", run = "shell 'trash-put \"$@\"' --confirm", desc = "Move to Trash" },
+  { on = "u", run = "plugin restore", desc = "Restore last deleted files/folders" },
+  { on = "U", run = "plugin restore -- --interactive", desc = "Restore deleted files/folders (Interactive)" },
+  { on = [
+    "g",
+    "i",
+  ], run = "plugin lazygit", desc = "run lazygit" },
+]
 
-# If you also using Yazi on Windows:
-[[mgr.prepend_keymap]]
-on   = "!"
-for  = "windows"
-run  = 'shell "powershell.exe" --block'
-desc = "Open PowerShell here"
-
-# Close input by once Esc press
-# You can change the Esc of input component from the default escape to close command, in your keymap.toml:
-[[input.prepend_keymap]]
-on   = "<Esc>"
-run  = "close"
-desc = "Cancel input"
+[input]
+prepend_keymap = [{ on = "<Esc>", run = "close", desc = "Cancel input" }]
