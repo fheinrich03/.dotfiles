@@ -14,7 +14,7 @@
 
 1. clone the repo
 ```bash
-git clone <repo> ~/.dotfiles
+git clone git@github.com:fheinrich03/.dotfiles.git ~/.dotfiles
 ```
 
 2. Backup or delete your config that you want to replace
