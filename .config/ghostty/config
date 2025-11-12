@@ -1,6 +1,10 @@
+# options
 font-family = "JetBrains Mono"
 font-size = 16
 
+confirm-close-surface = false
+
+# theme and colors
 cursor-color = #fc03ba
 
 background = "#000000"
