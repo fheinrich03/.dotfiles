@@ -24,7 +24,7 @@ git clone git@github.com:fheinrich03/.dotfiles.git ~/.dotfiles
 ### Adding Symlinks
 
 3. add symlinks from `.config/` to `.dotfiles/`
-> for this we will use `stow` following [this example](https://github.com/aspiers/stow)
+> for this we will use `stow` following [this example](https://tamerlan.dev/how-i-manage-my-dotfiles-using-gnu-stow/)
 
 all you need to do is install stow and link the `.dotfiles/` folder to the parent folder
 ```bash
