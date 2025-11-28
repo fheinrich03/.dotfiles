@@ -13,12 +13,12 @@ return {
       desc = "Flash [J]ump",
     },
     {
-      "<leader>fs",
+      "<leader>ft",
       mode = { "n", "x", "o" },
       function()
         require("flash").treesitter()
       end,
-      desc = "[F]lash Tree[S]itter",
+      desc = "[F]lash [T]reesitter",
     },
     {
       "r",

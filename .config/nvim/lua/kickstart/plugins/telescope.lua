@@ -90,7 +90,6 @@ return {
           find_command = build_rg_command(),
         })
       end, { desc = "[F]ind in [F]iles" })
-      vim.keymap.set("n", "<leader>ft", builtin.builtin, { desc = "[F]ind in [T]elescope" })
       vim.keymap.set(
         "n",
         "<leader>fs",

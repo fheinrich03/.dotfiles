@@ -3,3 +3,6 @@ if status is-interactive
 end
 
 zoxide init fish | source
+
+# Added by Antigravity
+fish_add_path /Users/fheinrich/.antigravity/antigravity/bin
