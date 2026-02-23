@@ -21,6 +21,13 @@ run this in terminal
 fish_config theme save cyberdream
 ```
 
+## How to Set fish as default shell in mac
+
+```bash
+echo $(which fish) | sudo tee -a /etc/shells
+chsh -s $(which fish)
+```
+
 ## How to add Environment Variables
 
 ```bash

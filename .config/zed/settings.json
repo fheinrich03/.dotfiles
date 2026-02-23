@@ -9,14 +9,14 @@
 {
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "vim_mode": true,
   "vertical_scroll_margin": 99,
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000
-    }
+      "milliseconds": 1000,
+    },
   },
   "base_keymap": "VSCode",
   "ui_font_size": 16,
@@ -24,41 +24,46 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Cyberdream dark"
+    "dark": "Cyberdream dark",
+  },
+  "terminal": {
+    "shell": {
+      "program": "fish",
+    },
   },
   "theme_overrides": {
-      "Cyberdream dark": {
-        // Grund-Background (App / Fenster)
-        "background": "#171c29",
-  
-        // Editor
-        "editor.background": "#171c29",
-        "editor.gutter.background": "#171c29",
-        "editor.subheader.background": "#171c29",
-        "editor.active_line.background": "#0b1120",
-  
-        // Terminal
-        "terminal.background": "#171c29",
-  
-        // Tabs & Tab-Bar
-        "tab_bar.background": "#171c29",
-        "tab.inactive_background": "#171c29",
-        "tab.active_background": "#0b1120",
-  
-        // Panels / Seitenleisten / Toolbar / Statuszeile
-        "panel.background": "#171c29",
-        "toolbar.background": "#171c29",
-        "status_bar.background": "#171c29",
-        "title_bar.background": "#171c29",
-  
-        // Scrollbar
-        "scrollbar.track.background": "#171c29",
-  
-        // Sonstige „graue“ Flächen mit eigener Background-Farbe
-        "error.background": "#171c29",
-        "hint.background": "#0b1120",
-        "warning.background": "#0b1120",
-        "search.match_background": "#0b112080"
-      }
-    }
+    "Cyberdream dark": {
+      // Grund-Background (App / Fenster)
+      "background": "#171c29",
+
+      // Editor
+      "editor.background": "#171c29",
+      "editor.gutter.background": "#171c29",
+      "editor.subheader.background": "#171c29",
+      "editor.active_line.background": "#0b1120",
+
+      // Terminal
+      "terminal.background": "#171c29",
+
+      // Tabs & Tab-Bar
+      "tab_bar.background": "#171c29",
+      "tab.inactive_background": "#171c29",
+      "tab.active_background": "#0b1120",
+
+      // Panels / Seitenleisten / Toolbar / Statuszeile
+      "panel.background": "#171c29",
+      "toolbar.background": "#171c29",
+      "status_bar.background": "#171c29",
+      "title_bar.background": "#171c29",
+
+      // Scrollbar
+      "scrollbar.track.background": "#171c29",
+
+      // Sonstige „graue“ Flächen mit eigener Background-Farbe
+      "error.background": "#171c29",
+      "hint.background": "#0b1120",
+      "warning.background": "#0b1120",
+      "search.match_background": "#0b112080",
+    },
+  },
 }

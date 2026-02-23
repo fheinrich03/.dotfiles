@@ -1,4 +1,5 @@
 # options
+command = fish
 term=xterm-256color
 font-family = "JetBrains Mono"
 font-size = 16
