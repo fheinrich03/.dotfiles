@@ -1,8 +1,19 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
+# Bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
 
-zoxide init fish | source
+if status is-interactive
+    # zoxide
+    if command -q zoxide
+        zoxide init fish | source
+    end
+
+    # ngrok completion
+    if command -q ngrok
+        eval (ngrok completion)
+    end
+end
+fish_add_path $HOME/.local/bin
 
 # Added by Antigravity
 fish_add_path /Users/fheinrich/.antigravity/antigravity/bin
@@ -11,8 +22,5 @@ fish_add_path /Users/fheinrich/.antigravity/antigravity/bin
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
-
+zoxide init fish | source
 fnm env --use-on-cd | source
