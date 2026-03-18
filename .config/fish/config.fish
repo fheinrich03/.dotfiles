@@ -18,9 +18,8 @@ fish_add_path $HOME/.local/bin
 # Added by Antigravity
 fish_add_path /Users/fheinrich/.antigravity/antigravity/bin
 
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
-
 zoxide init fish | source
 fnm env --use-on-cd | source
+
+# variables
+abbr -a lg lazygit
