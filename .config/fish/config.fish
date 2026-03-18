@@ -21,5 +21,8 @@ fish_add_path /Users/fheinrich/.antigravity/antigravity/bin
 zoxide init fish | source
 fnm env --use-on-cd | source
 
+# options
+fish_vi_key_bindings
+
 # variables
 abbr -a lg lazygit
