@@ -9,7 +9,7 @@
 {
   "restore_on_startup": "launchpad",
   "session": {
-    "trust_all_worktrees": true
+    "trust_all_worktrees": true,
   },
   "disable_ai": true,
   "telemetry": {
@@ -26,6 +26,20 @@
   "base_keymap": "VSCode",
   "ui_font_size": 16,
   "buffer_font_size": 15,
+  "languages": {
+		"TypeScript": {
+			"language_servers": [
+				"!typescript-language-server",
+				"!eslint",
+				"angular",
+				"vtsls",
+				"..."
+			]
+		},
+		"HTML": {
+			"language_servers": ["angular", "..."]
+		}
+	},
   "theme": {
     "mode": "system",
     "light": "One Light",
