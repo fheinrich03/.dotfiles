@@ -30,6 +30,7 @@
     "dark": "Zed (Default)"
   },
   "restore_on_startup": "launchpad",
+  "confirm_quit": true,
   "session": {
     "trust_all_worktrees": true,
   },

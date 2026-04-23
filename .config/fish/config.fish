@@ -23,6 +23,8 @@ fnm env --use-on-cd | source
 
 # options
 fish_vi_key_bindings
+bind --mode insert \e\x7f backward-kill-word
 
 # variables
 abbr -a lg lazygit
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"

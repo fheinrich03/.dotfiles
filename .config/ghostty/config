@@ -1,5 +1,6 @@
 # options
 term=xterm-256color
+keybind = opt+backspace=text:\x1b\x7f
 font-family = "JetBrains Mono"
 font-size = 16
 
