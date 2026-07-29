@@ -10,20 +10,20 @@
     "context": "Editor",
     "bindings": {
       // "cmd-shift-i": "editor::Format",
-    }
+    },
   },
   {
     "context": "vim_mode == normal ||vim_mode == visual",
     "bindings": {
-      "s": null //unmap regular s vim motion to useit for surround
-    }
+      "s": null, //unmap regular s vim motion to useit for surround
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
       // "cmd-shift-i": "editor::Format",
-      "alt-h": "search::ToggleReplace"
-    }
+      "alt-h": "search::ToggleReplace",
+    },
   },
   {
     "context": "VimControl && !menu || !Editor && !Terminal",
@@ -31,8 +31,15 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown"
-    }
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == visual && !vim_waiting",
+    "bindings": {
+      "J": "editor::MoveLineDown",
+      "K": "editor::MoveLineUp",
+    },
   },
   {
     // netrw compatibility
@@ -40,14 +47,14 @@
     "bindings": {
       "d": "project_panel::Delete",
       "r": "project_panel::Rename",
-      "a": "project_panel::NewFile"
-    }
+      "a": "project_panel::NewFile",
+    },
   },
   {
     "context": "Terminal",
     "use_key_equivalents": true,
     "bindings": {
-      "ctrl-k": "workspace::ActivatePaneUp"
-    }
-  }
+      "ctrl-k": "workspace::ActivatePaneUp",
+    },
+  },
 ]
