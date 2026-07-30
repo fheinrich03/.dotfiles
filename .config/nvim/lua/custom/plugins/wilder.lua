@@ -22,7 +22,7 @@ return {
             { { a = 1 }, { a = 1 }, { foreground = "#f4468f" } }
           ),
         },
-        left = { " ", wilder.popupmenu_devicons() },
+        left = { " " },
         right = { " ", wilder.popupmenu_scrollbar() },
       })
     )
