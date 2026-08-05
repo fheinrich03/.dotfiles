@@ -3,6 +3,8 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 if status is-interactive
+    set -g fish_greeting ""
+
     # zoxide
     if command -q zoxide
         zoxide init fish | source
