@@ -7,49 +7,73 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  // Zed settings
+
+  // Enables prettier formatter.
+  "cli_default_open_behavior": "existing_window",
+  "prettier": {
+    "allowed": true,
+  },
+  // Sets the tab size to 2 globally
+  "tab_size": 2,
+  // Some exclusions to remove unwanted performance overhead.
+  // Note: Choose what to keep or discard based on your preference.
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/dist",
+    "**/.angular",
+    "**/coverage",
+    "**/.next",
+    "**/target",
+    "**/coverage",
+    "**/.cache",
+    "**/.turbo",
+    "**/.nx",
+    "**/.sass-cache",
+  ],
   "close_on_file_delete": true,
   "file_finder": {
     "file_icons": true,
-    "modal_max_width": "small"
+    "modal_max_width": "small",
   },
   "project_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent": {
     "dock": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "lsp": {
     "vtsls": {
       "settings": {
         "typescript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
+            "enabled": "always",
+          },
         },
         "javascript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
-        }
+            "enabled": "always",
+          },
+        },
       },
-      "enable_lsp_tasks": true
-    }
+      "enable_lsp_tasks": true,
+    },
   },
   "icon_theme": {
     "mode": "light",
     "light": "Zed (Default)",
-    "dark": "Zed (Default)"
+    "dark": "Zed (Default)",
   },
   "restore_on_startup": "launchpad",
   "confirm_quit": true,
@@ -72,19 +96,24 @@
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "languages": {
-		"TypeScript": {
-			"language_servers": [
-				"!typescript-language-server",
-				"!eslint",
-				"angular",
-				"vtsls",
-				"..."
-			]
-		},
-		"HTML": {
-			"language_servers": ["angular", "..."]
-		}
-	},
+    "TypeScript": {
+      "code_actions_on_format": {
+        // Organize and removes unused imports on explicit file save.
+        // Applies only to TypeScript files.
+        "source.organizeImports": true,
+      },
+      // "language_servers": [
+      //   "!typescript-language-server",
+      //   "!eslint",
+      //   "angular",
+      //   "vtsls",
+      //   "...",
+      // ],
+    },
+    // "HTML": {
+    //   "language_servers": ["angular", "..."],
+    // },
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",
