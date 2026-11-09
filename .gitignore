@@ -3,3 +3,6 @@
 # Logs & sockets (runtime, any folder)
 *.log
 *.sock
+
+# Raycast runtime cache
+.config/raycast/node-compile-cache/
