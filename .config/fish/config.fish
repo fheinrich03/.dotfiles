@@ -31,4 +31,3 @@ bind --mode insert \e\x7f backward-kill-word
 
 # variables
 abbr -a lg lazygit
-alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
